@@ -24,7 +24,7 @@ const HotelList = () => {
   }, {});
 
   return (
-    <div className=" bg-[#f8f0eb] p-8">
+    <div className=" bg-purple-200 p-8">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-4">Book your stay and <br/> relax in luxury</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

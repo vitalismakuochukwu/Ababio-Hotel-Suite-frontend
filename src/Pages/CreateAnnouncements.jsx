@@ -90,11 +90,11 @@ const CreateAnnouncements = () => {
   };
 
   return (
-    <div className="pl-4 md:pl-8">
+    <div className="bg-purple-400  pl-2  md:pl-8">
       <h1 className="text-lg font-bold mb-4">Announcements</h1>
       <button
         onClick={() => setShowModal(true)}
-        className="bg-purple-500 text-white px-2 py-1 rounded hover:bg-purple-600 text-sm"
+        className="bg-red-500 text-white px-2 py-1 rounded hover:bg-purple-600 text-sm"
       >
         Create Announcement
       </button>
@@ -119,7 +119,7 @@ const CreateAnnouncements = () => {
                 Create Announcement
               </h3>
               <form
-                className="px-3 flex flex-col gap-4"
+                className=" px-3 flex flex-col gap-4"
                 onSubmit={(e) => {
                   e.preventDefault();
                   handleSubmitCreate({
@@ -149,7 +149,7 @@ const CreateAnnouncements = () => {
                     onChange={handleChange}
                     id="body"
                     required
-                    className="capitalize rounded-md p-2 border-[1px] border-neutral-500 w-full h-40"
+                    className="capitalize rounded-md p-2 border-[1px] border-neutral-500 w-full h-20"
                   ></textarea>
                 </div>
                 <div className="flex flex-col gap-1 ">
@@ -165,17 +165,17 @@ const CreateAnnouncements = () => {
                     <option value="">Select Category</option>
                     {/* <option value="Exams">Exams</option> */}
                     <option value="General Notices">General Notices</option>
-                    {/* <option value="Events">Events</option> */}
+                    <option value="Events">Events</option>
                   </select>
                 </div>
                 <button
-                  className="bg-green-600 p-2 text-white rounded-md w-full flex items-center justify-center gap-1"
+                  className="bg-purple-600 p-2 text-white rounded-md w-full flex items-center justify-center gap-1"
                   type="submit"
                 >
                   Send
                   {loading && <BiLoader className="animate-spin" />}
                 </button>
-                <p className="bg-green-100 rounded-md p-2 text-black text-sm mb-6">
+                <p className="bg-purple-200 rounded-md p-2 text-black text-sm mb-6">
                   Note: This announcement will only be sent to students in your
                   department
                 </p>
@@ -186,10 +186,10 @@ const CreateAnnouncements = () => {
       )}
 
       {/* Announcements Table */}
-      <div className="mt-8">
+      <div className=" bg-purple-400 mt-8">
         <h2 className="text-lg font-bold mb-4">Existing Announcements</h2>
         <div className="overflow-x-auto">
-          <table className="min-w-full bg-white border border-gray-300">
+          <table className="bg-purple-400 min-w-full  border border-gray-300">
             <thead>
               <tr className="bg-gray-100">
                 <th className="py-1 px-2 border-b text-sm">Title</th>

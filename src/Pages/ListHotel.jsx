@@ -57,10 +57,10 @@ const ListHotel = () => {
   }, []);
 
   return (
-    <div className="pl-4 md:pl-4">
-      <h1 className="text-lg font-bold mb-4">Hotel List</h1>
+    <div className="bg-purple-400  pl-5 md:pl-4">
+      <h1 className="text-lg font-bold mb-1">Hotel List</h1>
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-300">
+        <table className=" bg-purple min-w-full border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
               <th className="py-1 px-2 border-b text-sm">Image</th>

@@ -84,12 +84,11 @@ const AdminWorkerDetails = ({ setToken }) => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <div className="bg-white rounded-lg shadow-md p-6 min-h-[600px] max-w-7xl mx-auto">
+    <div className="min-h-screen bg-purple-400 bg-gray-100 p-8">
         <h1 className="text-2xl font-bold text-gray-800 mb-6">Worker Details</h1>
         {workers.length > 0 ? (
           <div className="overflow-auto">
-            <table className="min-w-full divide-x divide-gray-200 text-sm">
+            <table className=" min-w-full divide-x divide-gray-200 text-sm">
               <thead className="bg-gray-50">
                 <tr>
                   <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Name</th>
@@ -100,7 +99,7 @@ const AdminWorkerDetails = ({ setToken }) => {
                   <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
                 </tr>
               </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+              <tbody className=" bg-purple-400  divide-y divide-gray-200">
                 {workers.map((worker) => (
                   <tr key={worker._id} className="hover:bg-gray-50">
                     <td className="px-4 py-2 whitespace-nowrap">{worker.name || worker.Name || 'N/A'}</td>
@@ -125,8 +124,6 @@ const AdminWorkerDetails = ({ setToken }) => {
           <div className="text-center text-gray-500">No workers found</div>
         )}
       </div>
-    </div>
-    
   );
 
 };

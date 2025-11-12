@@ -25,7 +25,7 @@ const Navbar = ({token, setToken}) => {
   if (token) {
     return (
       <>
-        <nav className={`flex items-center justify-between p-4 ${isDark ? 'bg-black/80 text-white' : 'bg-white/80 text-black'} backdrop-blur-sm z-10 relative`}>
+        <nav className={`flex items-center justify-between p-4 ${isDark ?  'bg-white/80 text-black':'bg-black/80 text-white' } backdrop-blur-sm z-10 relative`}>
           <div className="flex items-center">
             <img src={logo} alt="Logo" className='w-8 h-8 mr-2' style={{ filter: isDark ? 'brightness(0) invert(1)' : 'none' }} />
             <h2 className='text-sm font-bold'>ABABIO HOTEL & SUITE</h2>

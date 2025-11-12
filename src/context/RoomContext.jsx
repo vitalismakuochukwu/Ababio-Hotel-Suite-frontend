@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from 'react';
 import { roomData } from '../assets/asset';
 import axios from 'axios';
 
-const backendUrl = "http://localhost:3000"
+const backendUrl = "https://hotel-and-suit-backend.onrender.com"
 
 const RoomContext = createContext();
 

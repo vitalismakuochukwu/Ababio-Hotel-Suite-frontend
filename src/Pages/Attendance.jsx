@@ -10,7 +10,7 @@ const Attendance = () => {
   const [reportData, setReportData] = useState([]);
   const [selectedDate, setSelectedDate] = useState('');
 
-  const backendUrl = 'http://localhost:3000';
+  const backendUrl = 'https://hotel-and-suit-backend.onrender.com';
 
   const fetchAttendance = async () => {
     try {
@@ -124,7 +124,7 @@ const Attendance = () => {
   }, []);
 
   return (
-    <div className="p-8">
+    <div className="bg-purple-400 p-8">
       <h1 className="text-lg font-bold mb-6">Worker Attendance</h1>
 
       <div className="flex justify-between items-center mb-6">
@@ -134,11 +134,11 @@ const Attendance = () => {
             placeholder="Search by Name"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-48"
+            className="px-0.4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-48"
           />
           <button
             onClick={generateReport}
-            className="bg-purple-500 text-white px-2 py-1 rounded-md hover:bg-purple-600 text-sm"
+            className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-purple-600 text-sm"
           >
             Attendance Report
           </button>
@@ -146,7 +146,7 @@ const Attendance = () => {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-300">
+        <table className=" bg-purple-400 min-w-full bg-white border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
               <th className="py-2 px-4 border-b">S/N</th>
@@ -160,7 +160,7 @@ const Attendance = () => {
           </thead>
           <tbody>
             {filteredAttendance.map((record, index) => (
-              <tr key={record._id} className="hover:bg-gray-50">
+              <tr key={record._id} className="bg-purple-400  hover:bg-gray-50">
                 <td className="py-2 px-4 border-b text-center">{index + 1}</td>
                 <td className="py-2 px-4 border-b">{record.fullname}</td>
                 <td className="py-2 px-4 border-b">{record.email}</td>
@@ -229,8 +229,8 @@ const Attendance = () => {
       </div>
 
       {showReport && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg w-full max-w-6xl max-h-96 overflow-y-auto">
+        <div className="fixed inset-0 bg-white bg-opacity-50 flex items-center  justify-center z-50">
+          <div className="bg-purple-400 p-6 rounded-lg w-full max-w-6xl max-h-96 overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-bold">Attendance Report</h2>
               <button
@@ -257,7 +257,7 @@ const Attendance = () => {
               )}
             </div>
             <div className="overflow-x-auto">
-              <table className="min-w-full bg-white border border-gray-300">
+              <table className="min-w-full bg-purple border border-gray-300">
                 <thead>
                   <tr className="bg-gray-100">
                     <th className="py-2 px-4 border-b">S/N</th>

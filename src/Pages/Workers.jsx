@@ -152,7 +152,7 @@ const Workers = () => {
   }, []);
 
   return (
-    <div className="p-8">
+    <div className="bg-purple-400 p-8">
       <h1 className="text-lg font-bold mb-6">Worker Management</h1>
 
       <div className="flex justify-between items-center mb-6">
@@ -166,7 +166,7 @@ const Workers = () => {
           />
           <button
             onClick={() => setShowForm(true)}
-            className="bg-green-500 text-white px-2 py-1 rounded-md hover:bg-green-600 text-sm"
+            className="bg-red-500 text-white px-6 py-1 rounded-md hover:bg-green-600 text-sm"
           >
             Add New Worker
           </button>
@@ -174,8 +174,8 @@ const Workers = () => {
       </div>
 
       {showForm && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg w-full max-w-md">
+        <div className="fixed  inset-0 bg-white bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-purple-400 p-6 rounded-lg w-full max-w-md">
             <h2 className="text-lg font-bold mb-4">Add New Worker</h2>
             <form onSubmit={handleFormSubmit} className="space-y-4">
               <input
@@ -245,7 +245,7 @@ const Workers = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                  className="bg-red-500 text-white px-2 py-1 rounded-md hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
                 >
                   {loading ? 'Adding...' : 'Add Worker'}
                 </button>
@@ -264,7 +264,7 @@ const Workers = () => {
       )}
 
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-300">
+        <table className="bg-purple-400 min-w-full  border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
               <th className="py-2 px-4 border-b">S/N</th>

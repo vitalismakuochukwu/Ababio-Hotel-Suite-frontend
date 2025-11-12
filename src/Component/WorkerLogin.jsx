@@ -10,7 +10,7 @@ const WorkerLogin = ({ setToken, onClose, onSwitchToRegister }) => {
   const workerLoginHandler = async (e) => {
     try {
       e.preventDefault()
-      const response = await fetch('http://localhost:3000/api/worker/login', {
+      const response = await fetch('https://hotel-and-suit-backend.onrender.com/api/worker/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const WorkerLogin = ({ setToken, onClose, onSwitchToRegister }) => {
   }
 
   return (
-    <div className='bg-white p-8 rounded-lg shadow-md w-full max-w-md relative'>
+    <div className='bg-purple-200 p-20  rounded-lg shadow-md w-full max-w-md relative'>
       <button onClick={onClose} className='absolute top-2 right-2 text-gray-500 hover:text-gray-700'>×</button>
       <h1 className='text-2xl font-bold text-center text-black mb-4'>Worker Login</h1>
       <form onSubmit={workerLoginHandler}>

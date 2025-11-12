@@ -40,10 +40,10 @@ const Reservation = () => {
   }, []);
 
   return (
-    <div className="pl-4 md:pl-4">
-      <h1 className="text-lg font-bold mb-4">Reservations</h1>
-      <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-300">
+    <div className="bg-purple-400  pl-4 md:pl-4">
+      <h1 className="text-lg font-bold mb-1">Reservations</h1>
+      <div className=" overflow-x-auto">
+        <table className="bg-purple min-w-full  border border-gray-300">
           <thead>
             <tr>
               <th className="py-1 px-2 border-b text-sm">Name</th>

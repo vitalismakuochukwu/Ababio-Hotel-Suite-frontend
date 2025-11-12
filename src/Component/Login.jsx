@@ -30,13 +30,13 @@ const Login = ({ setToken, onClose }) => {
   }
 
   return (
-    <div className='bg-white p-8 rounded-lg shadow-md w-full max-w-md relative'>
+    <div className='bg-purple-200 p-20 rounded-lg shadow-md w-full max-w-md relative'>
       <button onClick={onClose} className='absolute top-2 right-2 text-gray-500 hover:text-gray-700'>×</button>
       <h1 className='text-2xl font-bold text-center text-gray-800 mb-4'>Admin Login</h1>
       <form onSubmit={adminLoginHandler}>
         <div className='mb-4'>
           <p className='text-sm font-semibold text-gray-600 mb-2'>Email Address</p>
-          <input type="email" placeholder="Enter admin email" value={email} onChange={(e) => setEmail(e.target.value)} className='w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:border-gray-800' />
+          <input type="email" placeholder="Enter admin email" value={email} onChange={(e) => setEmail(e.target.value)} className='w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:border-white-800' />
         </div>
         <div className='mb-4'>
           <p className='text-sm font-semibold text-gray-600 mb-2'>Password</p>

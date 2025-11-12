@@ -49,7 +49,7 @@ const Contact = () => {
 
   return (
     <section
-     className='py-24 px-4 relative bg-[#f8f0eb]'>
+     className='py-24 px-4 relative bg-purple-200'>
         <div className='container mx-auto max-w-5xl'>
             <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center'>
         Get in  <span className='text-primary'>Touch</span>
