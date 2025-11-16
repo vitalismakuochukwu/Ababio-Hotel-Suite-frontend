@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { backendUrl } from '../config';
 
 const Attendance = () => {
   const [attendance, setAttendance] = useState([]);
@@ -9,8 +10,6 @@ const Attendance = () => {
   const [showReport, setShowReport] = useState(false);
   const [reportData, setReportData] = useState([]);
   const [selectedDate, setSelectedDate] = useState('');
-
-  const backendUrl = 'https://hotel-and-suit-backend.onrender.com';
 
   const fetchAttendance = async () => {
     try {

@@ -35,7 +35,7 @@ const HotelList = () => {
                 const firstRoom = roomGroup[0];
                 return (
                   <Link key={roomName} to={`/room/${firstRoom._id}`}>
-                    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow">
+                    <div className="bg-purple-400 dark:bg-gray-800 p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow">
                       <img src={firstRoom.image} alt={roomName} className="w-full h-32 object-cover rounded-md mb-3" />
                       <div>
                         <h3 className="text-lg font-semibold mb-2">{roomName}</h3>

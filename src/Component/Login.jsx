@@ -1,5 +1,5 @@
 import React from 'react'
-import { backendUrl } from '../App.jsx'
+import { backendUrl } from '../config';
 import axios from 'axios'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';

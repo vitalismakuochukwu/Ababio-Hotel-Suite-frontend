@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { backendUrl } from '../config';
 
 const Workers = () => {
   const [workers, setWorkers] = useState([]);
@@ -17,8 +18,6 @@ const Workers = () => {
     serialNumber: ''
   });
   const [loading, setLoading] = useState(false);
-
-  const backendUrl = 'https://hotel-and-suit-backend.onrender.com';
 
   const fetchWorkers = async () => {
     try {

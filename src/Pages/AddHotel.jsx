@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import default_img from  "../assets/rema.jpg"
-import { backendUrl } from '../App'
+import { backendUrl } from '../config';
 import axios from 'axios';
 // import { ToastContainer } from 'react-toastify';
 
@@ -21,7 +21,7 @@ const AddHotel = ({token}) => {
       if (image) formData.append('image', image);
 
 
-      const response =await axios.post(`https://hotel-and-suit-backend.onrender.com/api/hotel/add`, formData)
+      const response =await axios.post(`${backendUrl}/api/hotel/add`, formData)
 
       if (response.data.success) {
         console.log(response.data.message);

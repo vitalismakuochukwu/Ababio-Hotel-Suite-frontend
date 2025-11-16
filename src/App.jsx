@@ -17,8 +17,7 @@ import AdminWorkerDetails from './Pages/AdminWorkerDetails';
 import Attendance from './Pages/Attendance';
 import Workers from './Pages/Workers';
 import ProtectedRoute from './Component/ProtectedRoute';
-
-export const backendUrl="https://hotel-and-suit-backend.onrender.com"
+import { backendUrl } from './config';
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token') || '');
   const [workerToken, setWorkerToken] = useState(localStorage.getItem('worker-token') || '');

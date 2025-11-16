@@ -4,7 +4,7 @@ import { RoomContext } from '../context/RoomContext'
 import axios from "axios"
 import { FaConciergeBell, FaSwimmingPool, FaTv, FaUtensils, FaWifi } from 'react-icons/fa'
 
-const backendUrl = "https://hotel-and-suit-backend.onrender.com"
+import { backendUrl } from '../config';
 
 const amenitiesList =[
   {label: "Wi-fi",icon: <FaWifi className='text-grey-600'/>},

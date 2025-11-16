@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
+import { backendUrl } from '../config';
 
 const WorkerLogin = ({ setToken, onClose, onSwitchToRegister }) => {
   const [email, setEmail] = useState(localStorage.getItem('workerEmail') || '');
@@ -10,7 +11,7 @@ const WorkerLogin = ({ setToken, onClose, onSwitchToRegister }) => {
   const workerLoginHandler = async (e) => {
     try {
       e.preventDefault()
-      const response = await fetch('https://hotel-and-suit-backend.onrender.com/api/worker/login', {
+      const response = await fetch(`${backendUrl}/api/worker/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ const Footer = ({ setToken }) => {
       {/* buuton switch */}
       <div className='flex flex-col justify-between items-center text-center gap-6'>
         <div>
-        <h2 className='text-lg md:text-2xl font-bold'>ABABIO HOTELS & SUITES</h2>
+        <h2 className='text-lg md:text-2xl font-bold'>ABABIO HOTEL & SUITE</h2>
           <div className='flex justify-center gap-4 mt-3 text-purple-500 '>
             <FaTwitter className='text-3xl cursor-pointer'/>
             <FaFacebook className='text-3xl cursor-pointer'/>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import axios from 'axios';
-import { backendUrl } from './Home';
+import { backendUrl } from '../config';
 import { toast } from 'react-toastify';
 import { Country, State, City } from 'country-state-city';
 import { getStates, getLGAs } from '../data/nigerianStatesLGA';

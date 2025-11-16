@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BiLoader } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
-import { backendUrl } from "../Pages/Home";
+import { backendUrl } from "../config";
 import axios from 'axios';
 import { toast } from 'react-toastify';
 

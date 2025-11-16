@@ -5,8 +5,7 @@ import Facility from '../Component/Facility'
 import Contact from '../Pages/Contact'
 import Footer from '../Component/Footer'
 import { ToastContainer } from 'react-toastify';
-
-export const backendUrl = 'https://hotel-and-suit-backend.onrender.com';
+import { backendUrl } from '../config';
 const Home = ({ setToken }) => {
   return (
     <div>

@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from 'react';
 import { roomData } from '../assets/asset';
 import axios from 'axios';
 
-const backendUrl = "https://hotel-and-suit-backend.onrender.com"
+import { backendUrl } from '../config';
 
 const RoomContext = createContext();
 
@@ -16,7 +16,7 @@ const RoomProvider = ({ children }) => {
 
   const fetchRoom = async () => {
     try {
-      const response = await axios.get(`${backendUrl}/api/hotel/list`)
+      const response = await axios.get(`${backendUrl}/api/hotel/list`, { timeout: 10000 })
       if (response.data.success) {
         setRooms(response.data.hotels)
       } else {
